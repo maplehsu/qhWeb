@@ -608,26 +608,6 @@ a:hover {
     background-image: url('../images/background/about-us.jpg');
 }
 
-.bg-faq {
-    background-image: url('../images/background/bg-section-faq.jpg');
-}
-
-.bg-team {
-    background-image: url('../images/background/bg-section-team.jpg');
-}
-
-.page-login {
-    background-image: url('../images/background/cruises-result.jpg');
-}
-
-.car-detail {
-    background-image: url('../images/background/bg-car-detail.jpg');
-}
-
-.cruises-detail {
-    background-image: url('../images/background/bg-cruises-detail.jpg');
-}
-
 /*=============================
  =====  END GLOBAL STYLE  =====
  =============================*/
@@ -3792,7 +3772,7 @@ footer .widget .title-widget {
 }
 
 .hyperlink .name-company {
-    margin-bottom: 20px;
+   padding: 10px 0;
 }
 
 .hyperlink.bg-transparent {
