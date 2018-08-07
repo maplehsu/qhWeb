@@ -10,7 +10,7 @@
                       <div class="col-2">
                           <div class="col-md-3 col-xs-5">
                               <div class="contact-us-widget widget">
-                                  <div class="title-widget">contact us</div>
+                                  <div class="title-widget">联系我们</div>
                                   <div class="content-widget">
                                       <div class="info-list">
                                           <ul class="list-unstyled">
@@ -22,22 +22,7 @@
                                                   <i class="icons fa fa-phone"></i>
                                                   <a href="#" class="link">270 - 188 - 6026</a>
                                               </li>
-                                              <li>
-                                                  <i class="icons fa fa-envelope-o"></i>
-                                                  <a href="#" class="link">domain@expooler.com</a>
-                                              </li>
                                           </ul>
-                                      </div>
-                                      <div class="form-email">
-                                          <p class="text">Sign up for our mailing list to get latest updates and offers.</p>
-                                          <form action="#">
-                                              <div class="input-group">
-                                                  <input type="text" placeholder="Email address" class="form-control form-email-widget" />
-                                                  <span class="input-group-btn">
-                                                      <button type="submit" class="btn-email">&#10004;</button>
-                                                  </span>
-                                              </div>
-                                          </form>
                                       </div>
                                   </div>
                               </div>

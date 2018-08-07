@@ -344,14 +344,14 @@
 }
 
 .page-title-wrapper .captions {
-    font-size: 100px;
+    font-size: 80px;
     font-weight: 900;
     line-height: 90px;
 
     display: inline-block;
 
     max-width: 850px;
-    margin: 15px 0 0 0;
+    margin: 15px 0 15px 0;
 
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -3620,7 +3620,7 @@
 }
 
 .text-salebox .text-left .sale-box .sup-2 {
-    font-size: 36px;
+    font-size: 16px;
     font-weight: 900;
     line-height: 1;
 
@@ -3634,7 +3634,7 @@
 }
 
 .text-salebox .text-left .sale-box .text-sale {
-    font-size: 72px;
+    font-size: 50px;
     font-weight: 900;
     line-height: 55px;
 
@@ -3655,7 +3655,7 @@
     display: table-cell;
 
     padding-top: 13px;
-    padding-left: 20px;
+    padding-left: 50px;
 
     text-align: left;
     vertical-align: top;
@@ -3918,8 +3918,6 @@
 }
 
 .contact-box > .text {
-    font-style: italic;
-
     margin: 0 0 35px 0;
 }
 
