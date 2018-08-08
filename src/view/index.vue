@@ -76,34 +76,9 @@
                                     </a>
                                     <div class="title-wrapper">
                                         <a href="" class="title">Newyork city</a>
-                                        <i class="icons flaticon-circle"></i>
-                                    </div>
-                                    <div class="label-sale">
-                                        <p class="text">sale</p>
-                                        <p class="number">35%</p>
                                     </div>
                                 </div>
                                 <div class="content-wrapper">
-                                    <ul class="list-info list-inline list-unstyle">
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-eye"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-heart"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-comment"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                     <div class="content">
                                         <div class="title">
                                             <div class="price">
@@ -114,8 +89,7 @@
                                         </div>
                                         <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
                                         <div class="group-btn-tours">
-                                            <a href="" class="left-btn">book now</a>
-                                            <a href="" class="right-btn">add to list</a>
+                                            <a href="" class="btn btn-gray">查看详情</a>
                                         </div>
                                     </div>
                                 </div>
@@ -123,46 +97,24 @@
                             <div class="tours-layout">
                                 <div class="image-wrapper">
                                     <a href="" class="link">
-                                        <img src="../assets/images/tours/tour-2.jpg" alt="" class="img-responsive">
+                                        <img src="../assets/images/tours/tour-1.jpg" alt="" class="img-responsive">
                                     </a>
                                     <div class="title-wrapper">
-                                        <a href="" class="title">paris city</a>
-                                        <i class="icons flaticon-circle"></i>
+                                        <a href="" class="title">Newyork city</a>
                                     </div>
                                 </div>
                                 <div class="content-wrapper">
-                                    <ul class="list-info list-inline list-unstyled">
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-eye"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-heart"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-comment"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                     <div class="content">
                                         <div class="title">
                                             <div class="price">
                                                 <sup>$</sup>
-                                                <span class="number">250</span>
+                                                <span class="number">350</span>
                                             </div>
                                             <p class="for-price">3 days 2 nights</p>
                                         </div>
                                         <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
                                         <div class="group-btn-tours">
-                                            <a href="" class="left-btn">book now</a>
-                                            <a href="" class="right-btn">add to list</a>
+                                            <a href="" class="btn btn-gray">查看详情</a>
                                         </div>
                                     </div>
                                 </div>
@@ -170,52 +122,30 @@
                             <div class="tours-layout">
                                 <div class="image-wrapper">
                                     <a href="" class="link">
-                                        <img src="../assets/images/tours/tour-3.jpg" alt="" class="img-responsive">
+                                        <img src="../assets/images/tours/tour-1.jpg" alt="" class="img-responsive">
                                     </a>
                                     <div class="title-wrapper">
-                                        <a href="" class="title">tokyo city</a>
-                                        <i class="icons flaticon-circle"></i>
+                                        <a href="" class="title">Newyork city</a>
                                     </div>
                                 </div>
                                 <div class="content-wrapper">
-                                    <ul class="list-info list-inline list-unstyled">
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-eye"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-heart"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">
-                                                <i class="icons fa fa-comment"></i>
-                                                <span class="text number">234</span>
-                                            </a>
-                                        </li>
-                                    </ul>
                                     <div class="content">
                                         <div class="title">
                                             <div class="price">
                                                 <sup>$</sup>
-                                                <span class="number">375</span>
+                                                <span class="number">350</span>
                                             </div>
                                             <p class="for-price">3 days 2 nights</p>
                                         </div>
                                         <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
                                         <div class="group-btn-tours">
-                                            <a href="" class="left-btn">book now</a>
-                                            <a href="" class="right-btn">add to list</a>
+                                            <a href="" class="btn btn-gray">查看详情</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-transparent margin-top70">more tours</a>
+                        <a href="" class="btn btn-transparent margin-top70">查看更多</a>
                     </div>
                 </div>
             </div>
@@ -912,11 +842,15 @@
       }
     },
     mounted() { 
+        this.init()
     },
     methods: {
       init: function () {
-        this.axios.get(this.api.getPath).then(res => {
-          this.data = res.data
+        this.axios.get(this.api.getSelectPath, {
+            params: { 'limit': 3 }
+        }).then(res => {
+            console.log(res)
+            this.data = res.data
         })
       },
       banner: function () {
