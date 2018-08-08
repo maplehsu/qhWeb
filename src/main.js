@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Axios from 'axios'
+import moment from 'moment'
 import '@/assets/font/font-icon/font-awesome/css/font-awesome.css'
 import '@/assets/font/font-icon/font-flaticon/flaticon.css'
 import '@/assets/libs/bootstrap/css/bootstrap.min.css'
@@ -20,8 +21,13 @@ import '@/assets/css/layout.css'
 import '@/assets/css/components.css'
 import '@/assets/css/responsive.css'
 import '@/assets/css/color.css'
-
 import API from '../config/api'
+
+Vue.filter('moment', function (value, formatString) {
+  formatString = formatString || 'YYYY-MM-DD HH:mm:ss';
+  return moment(value).format(formatString); // value可以是普通日期 20170723
+  // return moment.unix(value).format(formatString); // 这是时间戳转时间
+});
 
 Vue.config.productionTip = false
 

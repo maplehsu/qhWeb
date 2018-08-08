@@ -13,40 +13,6 @@ jQuery(function($) {
         var width_boder = $('.homepage-default .title').width() - $('.homepage-default .text').width() - 10;
         $('.homepage-default .text .boder').width(width_boder);
 
-        // slide section AWESOME TOURS
-        $('.tours-list').slick({
-            infinite: true,
-            speed: 1000,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            responsive: [{
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    dots: true
-                }
-            }, {
-                breakpoint: 601,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                    speed: 600
-                }
-            }, {
-                breakpoint: 481,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    dots: true,
-                    speed: 600
-                }
-            }]
-        });
-
         // Slide section HAPPY TRAVELER
         $('.traveler-list').slick({
             infinite: true,

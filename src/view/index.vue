@@ -69,83 +69,33 @@
                     </div>
                     <div class="tours-content margin-top70">
                         <div class="tours-list">
-                            <div class="tours-layout">
+                            <div class="tours-layout" v-for="item in pathData" :key="item.pathID">
                                 <div class="image-wrapper">
-                                    <a href="" class="link">
-                                        <img src="../assets/images/tours/tour-1.jpg" alt="" class="img-responsive">
+                                    <a href="" class="link" v-for="img in item.cover" :key="img.name">
+                                        <img :src="img.url" alt="" class="img-responsive">
                                     </a>
                                     <div class="title-wrapper">
-                                        <a href="" class="title">Newyork city</a>
+                                        <a href="" class="title">{{item.title}}</a>
                                     </div>
                                 </div>
                                 <div class="content-wrapper">
                                     <div class="content">
                                         <div class="title">
                                             <div class="price">
-                                                <sup>$</sup>
-                                                <span class="number">350</span>
+                                                <sup>￥</sup>
+                                                <span class="number">{{item.price}}</span>
                                             </div>
-                                            <p class="for-price">3 days 2 nights</p>
+                                            <p class="for-price">{{item.creatTime, 'YYYY-MM-DD'| moment}}</p>
                                         </div>
-                                        <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
+                                        <p class="text">{{item.notice}}</p>
                                         <div class="group-btn-tours">
-                                            <a href="" class="btn btn-gray">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tours-layout">
-                                <div class="image-wrapper">
-                                    <a href="" class="link">
-                                        <img src="../assets/images/tours/tour-1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                    <div class="title-wrapper">
-                                        <a href="" class="title">Newyork city</a>
-                                    </div>
-                                </div>
-                                <div class="content-wrapper">
-                                    <div class="content">
-                                        <div class="title">
-                                            <div class="price">
-                                                <sup>$</sup>
-                                                <span class="number">350</span>
-                                            </div>
-                                            <p class="for-price">3 days 2 nights</p>
-                                        </div>
-                                        <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
-                                        <div class="group-btn-tours">
-                                            <a href="" class="btn btn-gray">查看详情</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tours-layout">
-                                <div class="image-wrapper">
-                                    <a href="" class="link">
-                                        <img src="../assets/images/tours/tour-1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                    <div class="title-wrapper">
-                                        <a href="" class="title">Newyork city</a>
-                                    </div>
-                                </div>
-                                <div class="content-wrapper">
-                                    <div class="content">
-                                        <div class="title">
-                                            <div class="price">
-                                                <sup>$</sup>
-                                                <span class="number">350</span>
-                                            </div>
-                                            <p class="for-price">3 days 2 nights</p>
-                                        </div>
-                                        <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus ultrices purus, volutpat.</p>
-                                        <div class="group-btn-tours">
-                                            <a href="" class="btn btn-gray">查看详情</a>
+                                            <a href="" class="btn btn-gray">线路详情</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-transparent margin-top70">查看更多</a>
+                        <a href="" class="btn btn-transparent margin-top70">更多线路</a>
                     </div>
                 </div>
             </div>
@@ -738,7 +688,7 @@
                     <div class="col-md-5">
                         <div class="group-title">
                             <div class="sub-title">
-                                <p class="text">全球旅游消费指南</p>
+                                <p class="text">青海旅游消费指南</p>
                                 <i class="icons flaticon-people"></i>
                             </div>
                             <h2 class="main-title">覆盖全球5个国家和国内18个省4个直辖市</h2>
@@ -830,6 +780,7 @@
     </div>
 </template>
 <script>
+  import '../../static/js/pages/home-page.js'
   import vBanner from '@/components/banner'
   export default {
     components: {
@@ -837,25 +788,56 @@
     },
     data() {
       return {
-        data: null,
-        bannerList: null
+        pathData: null
       }
     },
-    mounted() { 
+    mounted() {
         this.init()
     },
     methods: {
-      init: function () {
+      init: function () {     
         this.axios.get(this.api.getSelectPath, {
             params: { 'limit': 3 }
         }).then(res => {
-            console.log(res)
-            this.data = res.data
+            console.log(res.data)
+            this.pathData = res.data
+            this.toursList()
         })
       },
-      banner: function () {
-        this.axios.get(this.api.getBannerList).then(res => {
-          this.bannerList = res.data
+      toursList: function () {
+        this.$nextTick(function () {
+            $('.tours-list').slick({
+                infinite: true,
+                speed: 1000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                responsive: [{
+                    breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 601,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        speed: 600
+                    }
+                }, {
+                    breakpoint: 481,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        speed: 600
+                    }
+                }]
+            })    
         })
       }
     }
