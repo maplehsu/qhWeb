@@ -22,6 +22,9 @@ import '@/assets/css/components.css'
 import '@/assets/css/responsive.css'
 import '@/assets/css/color.css'
 import API from '../config/api'
+import Paginate from 'vuejs-paginate'
+
+Vue.component('paginate', Paginate)
 
 Vue.filter('moment', function (value, formatString) {
   formatString = formatString || 'YYYY-MM-DD HH:mm:ss';
@@ -32,6 +35,15 @@ Vue.filter('moment', function (value, formatString) {
 Vue.config.productionTip = false
 
 Vue.prototype.axios = Axios
+
+Vue.prototype.moment = moment
+
+Vue.prototype.aaa = function () {
+  var header_height = $('header').height();
+  var tabBtn_height = $('.tab-search .nav-tabs .tab-btn-wrapper').height();
+  $('.page-banner').css('top',header_height*(-1));
+  $('.page-banner').css('margin-bottom',header_height*(-1) - tabBtn_height);
+}
 
 Vue.prototype.api = API
 

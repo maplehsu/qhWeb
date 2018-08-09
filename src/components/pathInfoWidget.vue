@@ -49,6 +49,19 @@ export default {
   data() {
     return {
     }
+  },
+  mounted() {
+    this.datePick()
+  },
+  methods: {
+      datePick: function () {
+        $('.archive-datepicker').datepicker({
+            format: 'mm/dd/yy',
+            todayHighlight : true,
+            language: 'zh-CN',
+            maxViewMode: 0
+        });
+      }
   }
 }
 

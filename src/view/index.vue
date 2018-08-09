@@ -799,8 +799,7 @@
         this.axios.get(this.api.getSelectPath, {
             params: { 'limit': 3 }
         }).then(res => {
-            console.log(res.data)
-            this.pathData = res.data
+            this.pathData = res.data.data
             this.toursList()
         })
       },

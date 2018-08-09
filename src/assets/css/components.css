@@ -218,7 +218,8 @@
 
     width: 100%;
     height: 540px;
-
+    /* top: -176px;
+    margin-bottom: -176px; */
     text-align: left;
 
     color: #ffffff;
@@ -8397,6 +8398,94 @@
     width: 100%;
     height: 100%;
 }
+
+.pagination>li:first-child>a, .pagination>li:last-child>a {
+    line-height: 30px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 50% !important;
+    margin-right: 10px;
+    font-size: 12px!important;
+}
+
+.pagination>li:first-child>a:hover, .pagination>li:last-child>a:hover {
+    color: #ffffff!important;
+    border: 1px solid #434a54!important;
+    background-color: #434a54!important;
+}
+
+.pagination>li:first-child>a:hover:after, .pagination>li:last-child>a:hover:after {
+    display: none!important;
+}
+
+.pagination>li>a, .pagination>li>span {
+    text-align: center;
+    color: #b3b3b3;
+    border: none;
+    background-color: transparent;
+}
+
+.pagination>.active>a, .pagination>.active>span {
+    pointer-events: none;
+    color: #434a54!important;
+    background-color: transparent!important;
+    border-color: none!important;
+}
+
+.pagination li > a:hover {
+    color: #434a54!important;
+    background-color: transparent!important;
+}
+
+.pagination li > a:hover:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    margin-left: -10px;
+    content: '';
+    background-color: #434a54!important;
+}
+
+.pagination li > a:after{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 1px;
+    margin-left: -10px;
+    content: '';
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    background-color: #434a54;
+}
+
+.pagination li.active a:after,  .pagination li.active span:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 20px;
+    height: 1px;
+    margin-left: -10px;
+    content: '';
+    background-color: #434a54!important;
+}
+
+.datepicker table tr td.today {
+    background: none!important;
+}
+
+.datepicker table tr td.today::before {
+    background: #ffdd00!important;
+}
+
+ 
+
 
 /*=============================
  ======      PLUGIN      ======
