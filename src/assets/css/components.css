@@ -1615,7 +1615,7 @@
 }
 
 .hotels-layout .content-wrapper > .content {
-    padding: 0 70px 0 25px;
+    padding: 0 25px 0 25px;
 
     text-align: center;
 }
@@ -1649,13 +1649,12 @@
 }
 
 .hotels-layout .content-wrapper > .content .title .for-price {
-    display: table-cell;
-
-    max-width: 80px;
+    max-width: 140px;
     margin-bottom: 0;
     padding-left: 10px;
-
     vertical-align: middle;
+    height: 70px;
+    overflow: hidden;
 }
 
 .hotels-layout .content-wrapper > .content > .text {
@@ -7137,7 +7136,7 @@
 }
 
 .blog-post .blog-content .date .month {
-    font-size: 1.43rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 
     text-transform: uppercase;

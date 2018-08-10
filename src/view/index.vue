@@ -792,6 +792,7 @@
       }
     },
     mounted() {
+        this.bannerTop()
         this.init()
     },
     methods: {

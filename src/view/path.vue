@@ -106,7 +106,7 @@
                                                       </div>
                                                       <p class="text">{{item.notice}}</p>
                                                       <div class="group-btn-tours">
-                                                          <router-link :to="{path: 'pathInfo', query:{id: item.pathID}}" >
+                                                          <router-link :to="{path: 'pathInfo', query:{pid: item._id}}" >
                                                             <button class="btn btn-gray">线路详情</button>
                                                           </router-link>
                                                       </div>
@@ -147,6 +147,7 @@
       }
     },
     mounted() {
+        this.bannerTop()
         this.init(0, 9)
         this.date()
     },
@@ -164,12 +165,12 @@
       },
       date: function () {
         setInterval(() => {
-          this.dateTime = this.moment().format('HH:mm:ss')
+          this.dateTime = this.moment().format('A HH:mm:ss')
         }, 1000)
       },
       clickCallback: function (pageNum) {
-        this.init(pageNum, 9)
-        this.page =  pageNum
+        this.init(pageNum == 1? 0 :pageNum , 9)
+        this.page = pageNum
       }
     },
     beforeDestroy () {

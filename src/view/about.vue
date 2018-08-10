@@ -528,6 +528,7 @@
       }
     },
     mounted() { 
+        this.bannerTop()
     },
     methods: {
     }
