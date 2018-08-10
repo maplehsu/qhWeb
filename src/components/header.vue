@@ -77,7 +77,7 @@
                       <div class="navbar-header">
                           <div class="logo">
                               <a href="" class="header-logo">
-                                  <img src="assets/images/logo/logo-white-color-1.png" alt="" />
+                                  <img alt="" />
                               </a>
                           </div>
                       </div>

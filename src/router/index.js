@@ -6,6 +6,7 @@ import Strategy from '@/view/strategy'
 import StrategyInfo from '@/view/strategyInfo'
 import Path from '@/view/path'
 import PathInfo from '@/view/pathInfo'
+import Loop from '@/view/loop'
 import Info from '@/view/info'
 
 Vue.use(Router)
@@ -47,6 +48,11 @@ const router = new Router({
       path: '/pathInfo',
       name: 'pathInfo',
       component: PathInfo
+    },
+    {
+      path: '/loop',
+      name: 'loop',
+      component: Loop
     }
   ]
 })

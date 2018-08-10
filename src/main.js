@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import Axios from 'axios'
 import moment from 'moment'
+import 'moment/locale/zh-cn'
 import '@/assets/font/font-icon/font-awesome/css/font-awesome.css'
 import '@/assets/font/font-icon/font-flaticon/flaticon.css'
 import '@/assets/libs/bootstrap/css/bootstrap.min.css'
@@ -38,11 +39,9 @@ Vue.prototype.axios = Axios
 
 Vue.prototype.moment = moment
 
-Vue.prototype.aaa = function () {
-  var header_height = $('header').height();
-  var tabBtn_height = $('.tab-search .nav-tabs .tab-btn-wrapper').height();
-  $('.page-banner').css('top',header_height*(-1));
-  $('.page-banner').css('margin-bottom',header_height*(-1) - tabBtn_height);
+Vue.prototype.bannerTop = function () {
+  $('.page-banner').css('top', '-176px');
+  $('.page-banner').css('margin-bottom','-176px');
 }
 
 Vue.prototype.api = API

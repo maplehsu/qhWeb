@@ -6,13 +6,13 @@
                 <div class="page-title-content">
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html" class="link home">首页</a>
+                            <a href="/" class="link home">首页</a>
                         </li>
                         <li>
-                            <a href="blog.html" class="link home">线路预定</a>
+                            <a href="/path" class="link home">线路预定</a>
                         </li>
                         <li class="active">
-                            <a href="#" class="link">线路预定详情</a>
+                            <a class="link">线路预定详情</a>
                         </li>
                     </ol>
                     <div class="clearfix"></div>
@@ -29,43 +29,21 @@
                         <div class="blog-post blog-text">
                             <div class="blog-image">
                                 <a href="javascript:void(0)" class="link">
-                                    <img src="../assets/images/blog/blog-image-1.jpg" alt="car on a road" class="img-responsive">
+                                    <img :src="banner" alt="car on a road" class="img-responsive">
                                 </a>
                             </div>
                             <div class="blog-content margin-bottom70">
                                 <div class="row">
                                     <div class="col-xs-1">
                                         <div class="date">
-                                            <h1 class="day">07</h1>
-                                            <div class="month">Jan</div>
-                                            <div class="year">2016</div>
+                                            <h1 class="day">{{day}}</h1>
+                                            <div class="month">{{month}}</div>
+                                            <div class="year">{{yea}}</div>
                                         </div>
                                     </div>
                                     <div class="col-xs-11 blog-text">
-                                        <a href="javascript:void(0)" class="heading"> Many people limit themselves what they think they can do.</a>
-                                        <div class="blog-descritption">
-                                            <p class="text">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae elit libero, a pharetra
-                                                augue. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus id elit non mi porta gravida.</p>
-                                            <p class="text">Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed consectetur.Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-                                                Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta at eget metus. Vestibulum id ligula porta felis euismod
-                                                semper.</p>
-                                            <div class="blockquote">
-                                                <div class="blockquote-title">Video courses to build new skills from start to finish.</div>
-                                                <div class="blockquote-des">Lorem ipsum dolor sit amet, feugiat delicata liberavisse id cum, no quo maiorum intellegebat, liber regione eu sit. Mea cu case ludus integre.</div>
-                                            </div>
-                                            <p class="text">Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-                                                Nulla vitae elit libero, a pharetra augue consectetur purus sit amet ferment</p>
-                                            <p class="text">Pellentesque ornare sem lacinia quam venenatis vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet fermentum. Pellentesque ornare sem lacinia quam venenatis
-                                                vestibulum. Aenean lacinia bibendum nulla sed tur.Cras mattis consectetur purus sit amet ferme</p>
-                                            <div class="group-list">
-                                                <ul class="blog-detail-list list-unstyled">
-                                                    <li> Phasellus tincidunt, quam ac hendrerit molestie.</li>
-                                                    <li> Etiam nulla lectus, dictum ut lobortis a, blandit sed nisi..</li>
-                                                    <li> Integer in purus et lectus accumsan tempor ac nec nulla.</li>
-                                                    <li> Vivamus varius erat justo, in vestibulum ipsum rutrum tristique..</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                        <a href="javascript:void(0)" class="heading">{{data.title}}</a>
+                                        <div class="blog-descritption" v-html="data.content"></div>
                                     </div>
                                 </div>
                             </div>
@@ -87,15 +65,33 @@ export default {
   },
   data() {
     return {
-    
+        id: null,
+        data: {},
+        day: 0,
+        month: '',
+        yea: '',
+        banner: ''
     }
   },
+  created(){
+    this.id = this.$route.query.pid
+  },
   mounted() {
-    this.$nextTick(()=> {
-      this.aaa()
-    })
+    this.bannerTop()
+    this.init()
   },
   methods: {
+    init: function () {
+        this.axios.post(this.api.getInfo, {
+          _id: this.id
+        }).then( res => {
+          this.data = $.parseJSON(JSON.stringify(res.data[0]))
+          this.day = this.moment(this.data.creatTime).format('DD')
+          this.yea = this.moment(this.data.creatTime).format('YYYY')
+          this.month = this.moment(this.data.creatTime).format('MMMM')
+          this.banner = this.data.cover[0].url
+        })
+    }
   }
 }
 

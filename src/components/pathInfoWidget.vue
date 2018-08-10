@@ -4,21 +4,20 @@
           <div class="col-1">
               <div class="recent-post-widget widget">
                   <div class="title-widget">
-                      <div class="title">攻略推荐</div>
+                      <div class="title">线路推荐</div>
                   </div>
                   <div class="content-widget">
                       <div class="recent-post-list">
-                          <div class="single-widget-item">
+                          <div class="single-widget-item" v-for="item in data" :key="item.pathID">
                               <div class="single-recent-post-widget">
-                                  <a href="javascript:void(0)" class="thumb img-wrapper">
-                                      <img src="../assets/images/blog/recent-blog-post/post-1.jpg" alt="recent post picture 1">
+                                  <a :href="'/pathInfo?pid=' + item._id" class="thumb img-wrapper" v-for="img in item.cover" :key="img.name">
+                                      <img :src="img.url" alt="recent post picture 1">
                                   </a>
                                   <div class="post-info">
                                       <div class="meta-info">
-                                          <span>Aug 18, 2016</span>
+                                          <span>{{item.creatTime}}</span>
                                       </div>
-                                      <div class="single-rp-preview">Donec ullamcorper nulla non metus nisi auctor fringilla they can
-                                          do.</div>
+                                      <div class="single-rp-preview"><a :href="'/pathInfo?pid=' + item._id">{{item.notice}}</a></div>
                                   </div>
                               </div>
                           </div>
@@ -48,10 +47,12 @@ export default {
 
   data() {
     return {
+        data: null
     }
   },
   mounted() {
     this.datePick()
+    this.init()
   },
   methods: {
       datePick: function () {
@@ -61,6 +62,11 @@ export default {
             language: 'zh-CN',
             maxViewMode: 0
         });
+      },
+      init: function () {
+        this.axios.get(this.api.getRandomPath).then(res => {
+            this.data = res.data
+        })
       }
   }
 }
