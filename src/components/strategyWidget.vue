@@ -10,15 +10,14 @@
                       <div class="recent-post-list">
                           <div class="single-widget-item">
                               <div class="single-recent-post-widget">
-                                  <a href="javascript:void(0)" class="thumb img-wrapper">
-                                      <img src="../assets/images/blog/recent-blog-post/post-1.jpg" alt="recent post picture 1">
+                                  <a :href="'/strategyInfo?id=' + data.strategyId" class="thumb img-wrapper" v-for="img in data.cover" :key="img.name">
+                                      <img :src="img.url" alt="recent post picture 1">
                                   </a>
                                   <div class="post-info">
                                       <div class="meta-info">
-                                          <span>Aug 18, 2016</span>
+                                          <span>{{data.creatTime}}</span>
                                       </div>
-                                      <div class="single-rp-preview">Donec ullamcorper nulla non metus nisi auctor fringilla they can
-                                          do.</div>
+                                      <div class="single-rp-preview"><a :href="'/strategyInfo?id=' + data.strategyId">{{data.notice}}</a></div>
                                   </div>
                               </div>
                           </div>
@@ -48,7 +47,28 @@ export default {
 
   data() {
     return {
+        data: {}
     }
+  },
+  mounted() {
+    this.datePick()
+    this.init()
+  },
+  methods: {
+      datePick: function () {
+        $('.archive-datepicker').datepicker({
+            format: 'mm/dd/yy',
+            todayHighlight : true,
+            language: 'zh-CN',
+            maxViewMode: 0
+        });
+      },
+      init: function () {
+        this.axios.get(this.api.getRandomStrategy).then(res => {
+            console.log(res.data)
+            this.data = res.data
+        })
+      }
   }
 }
 

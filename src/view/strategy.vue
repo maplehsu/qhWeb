@@ -22,126 +22,39 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 main-left blog-wrapper">
-                        <div class="blog-post">
-                            <div class="blog-image">
+                        <div class="blog-post" v-for="(strategy, index) in strategyList">
+                            <div class="blog-image" v-for="(strategyItem, index) in strategy.cover">
                                 <a href="javascript:void(0)" class="link">
-                                    <img src="../assets/images/blog/blog-image-1.jpg" alt="a car on a road" class="img-responsive">
+                                    <img :src="strategyItem.url" alt="a car on a road" class="img-responsive">
                                 </a>
                             </div>
                             <div class="blog-content">
                                 <div class="col-xs-2">
                                     <div class="row">
                                         <div class="date">
-                                            <h1 class="day">07</h1>
-                                            <div class="month">JAN</div>
-                                            <div class="year">2016</div>
+                                            <h1 class="day">{{strategy.createTime, 'DD' | moment}}</h1>
+                                            <div class="month">{{strategy.createTime, 'MMMM' | moment}}</div>
+                                            <div class="year">{{strategy.createTime, 'YYYY' | moment}}</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-10 content-wrapper">
-                                    <a href="javascript:void(0)" class="heading">Many people limit themselves what they think they can do.</a>
-                                    <h5 class="meta-info">Posted By :
-                                        <span>John Smith</span>
-                                        <span class="sep">/</span>
-                                        <span class="view-count fa-custom">56</span>
-                                        <span class="comment-count fa-custom">239</span>
-                                    </h5>
-                                    <p class="preview">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae
-                                        elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
-                                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                                        , tortor mauris condimentum nibh, ut...</p>
-                                    <a href="javascript:void(0)" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-post">
-                            <div class="blog-content">
-                                <div class="col-xs-2">
-                                    <div class="row">
-                                        <div class="date">
-                                            <h1 class="day">06</h1>
-                                            <div class="month">DEC</div>
-                                            <div class="year">2016</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-10 quote-content-wrapper content-wrapper">
-                                    <blockquote class="quote-wrapper fa-custom">
-                                        <a href="javascript:void(0)" class="quote">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                            eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis a.</a>
-                                        <footer>
-                                            <span class="author">Amber Ivy</span>
-                                            <span class="company">(Grancie Company)</span>
-                                        </footer>
-                                    </blockquote>
-                                    <p class="preview">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae
-                                        elit libero, a pharetra augue. Donec er nulla non metus auctor fringilla est non
-                                        commodo luctus.</p>
-                                    <a href="javascript:void(0)" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-post">
-                            <div class="blog-image">
-                                <a href="javascript:void(0)" class="link">
-                                    <img src="../assets/images/blog/blog-image-1.jpg" alt="a car on a road" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="blog-content">
-                                <div class="col-xs-2">
-                                    <div class="row">
-                                        <div class="date">
-                                            <h1 class="day">07</h1>
-                                            <div class="month">JAN</div>
-                                            <div class="year">2016</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-10 content-wrapper">
-                                    <a href="javascript:void(0)" class="heading">Many people limit themselves what they think they can do.</a>
-                                    <h5 class="meta-info">Posted By :
-                                        <span>John Smith</span>
-                                        <span class="sep">/</span>
-                                        <span class="view-count fa-custom">56</span>
-                                        <span class="comment-count fa-custom">239</span>
-                                    </h5>
-                                    <p class="preview">Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
-                                        eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Nulla vitae
-                                        elit libero, a pharetra augue. Donec ullamcorper nulla non metus auctor fringilla.
-                                        Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                                        , tortor mauris condimentum nibh, ut...</p>
-                                    <a href="javascript:void(0)" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
+                                    <a href="javascript:void(0)" class="heading">{{strategy.title}}</a>
+                                    <p>{{strategy.notice}}</p>
+                                    <a target="_blank" :href="'/strategyInfo?id='+strategy.strategyId" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
                                 </div>
                             </div>
                         </div>
                         <nav class="pagination-list margin-top70">
-                            <ul class="pagination">
-                                <li>
-                                    <a href="#" aria-label="Previous" class="btn-pagination previous">
-                                        <span aria-hidden="true" class="fa fa-angle-left"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-pagination active">01</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-pagination">02</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-pagination">03</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="btn-pagination">...</a>
-                                </li>
-                                <li>
-                                    <a href="#" aria-label="Next" class="btn-pagination next">
-                                        <span aria-hidden="true" class="fa fa-angle-right"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                            <paginate
+                                    v-model="currentPage"
+                                    :pageCount="pageCount"
+                                    :clickHandler="clickCallback"
+                                    :prevText="'<'"
+                                    :nextText="'>'"
+                                    :containerClass="'pagination'">
+                            </paginate>
+                        </nav>          
                     </div>
                     <strategy-widget></strategy-widget>
                 </div>
@@ -158,7 +71,32 @@
             strategyWidget
         },
         data() {
-            return {}
+            return {
+                strategyList: [],
+                currentPage: 1,
+                pageCount: 0
+            }
+        },
+        mounted () {
+            this.init(0, 5)
+        },
+        methods: {
+            init (skip, limit) {
+                limit = limit || 5
+                this.axios.get(this.api.getSelectStrategy, {
+                    params: { 
+                        'skip': skip,
+                        'limit': limit
+                    }
+                }).then(res => {   
+                    this.pageCount = Math.ceil(res.data.total / limit)  
+                    this.strategyList = res.data.data
+                })
+            },
+            clickCallback(pageNum) {
+                this.init(pageNum < 1 ? 0 : pageNum - 1 , 5)
+                this.currentPage = pageNum
+            }
         }
     }
 </script>
