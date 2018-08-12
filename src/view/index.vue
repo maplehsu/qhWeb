@@ -95,7 +95,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-transparent margin-top70">更多线路</a>
+                        <a href="/path" class="btn btn-transparent margin-top70">更多线路</a>
                     </div>
                 </div>
             </div>
