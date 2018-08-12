@@ -5,8 +5,10 @@ export default {
   getStrategyById: api + '/getStrategyById',
   editStrategy: api + '/editStrategy',
   deleteStrategy: api + '/deleteStrategy',
-  getSelectPath: process.env.API_ROOT + '/getSelectPath',
-  getInfo: process.env.API_ROOT + '/getInfo',
-  getBannerList: process.env.API_ROOT + '/getBannerList',
-  getRandomPath: process.env.API_ROOT + '/getRandomPath',
+  getSelectPath: api + '/getSelectPath',
+  getInfo: api + '/getInfo',
+  getBannerList: api + '/getBannerList',
+  getRandomPath: api + '/getRandomPath',
+  getSelectStrategy: api + '/getSelectStrategy',
+  getRandomStrategy: api + '/getRandomStrategy'
 }
