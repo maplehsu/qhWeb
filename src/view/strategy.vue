@@ -40,8 +40,8 @@
                                 </div>
                                 <div class="col-xs-10 content-wrapper">
                                     <a href="javascript:void(0)" class="heading">{{strategy.title}}</a>
-                                    <div v-html="strategy.content"></div>
-                                    <a href="javascript:void(0)" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
+                                    <p>{{strategy.notice}}</p>
+                                    <a :href="'/strategyInfo?id='+strategy.strategyId" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
                                 </div>
                             </div>
                         </div>
