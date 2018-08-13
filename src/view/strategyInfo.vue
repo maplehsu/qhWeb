@@ -27,7 +27,7 @@
                 <div class="col-md-8 main-left">
                     <div class="item-blog-detail">
                         <div class="blog-post blog-text">
-                            <div class="blog-image" v-for="(strategyItem, index) in strategy.cover">
+                            <div class="blog-image" v-for="(strategyItem, index) in strategy.cover" :key="index">
                                 <a href="javascript:void(0)" class="link">
                                     <img :src="strategyItem.url" alt="car on a road" class="img-responsive">
                                 </a>

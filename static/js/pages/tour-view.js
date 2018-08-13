@@ -99,8 +99,8 @@ jQuery(function($){
             }
         });
         
-        if($(window).width() > 1023)     
-            $('.gallery-block .grid .grid-item .gallery-image').directionalHover();
+        // if($(window).width() > 1023)     
+        //     $('.gallery-block .grid .grid-item .gallery-image').directionalHover();
         
         if (window.innerWidth < 769) {
 
@@ -146,6 +146,12 @@ jQuery(function($){
     
     $(document).ready(function(){
         SLZ.mainFunction();
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            todayHighlight : true,
+            language: 'zh-CN',
+            maxViewMode: 0
+        });
     });
     
     /*=====  End of INIT FUNCTIONS  ======*/

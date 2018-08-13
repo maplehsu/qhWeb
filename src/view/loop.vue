@@ -53,14 +53,14 @@
                           <div class="col-md-12">
                               <div class="hotel-list">
                                   <div class="row">
-                                      <div class="col-sm-6">
+                                      <div class="col-sm-6" v-for="item in loopData" :key="item.loopID">
                                           <div class="hotels-layout">
                                               <div class="image-wrapper">
-                                                  <a href="hotel-view.html" class="link">
-                                                      <img src="../assets/images/hotels/hotel-5.jpg" alt="" class="img-responsive">
-                                                  </a>
+                                                  <router-link  class="link" :to="{path: 'loopInfo', query:{lid: item.loopID}}"  v-for="img in item.cover" :key="img.name">
+                                                      <img :src="img.url" class="img-responsive">
+                                                  </router-link>
                                                   <div class="title-wrapper">
-                                                      <a href="hotel-view.html" class="title">sarina hotel</a>
+                                                      <router-link  class="title" :to="{path: 'loopInfo', query:{lid: item.loopID}}">{{item.title}}</router-link>
                                                       <div class="star-rating">
                                                           <span class="width-100"></span>
                                                       </div>
@@ -71,13 +71,15 @@
                                                       <div class="title">
                                                           <div class="price">
                                                               <sup>￥</sup>
-                                                              <span class="number">30</span>
+                                                              <span class="number">{{item.price}}</span>
                                                           </div>
-                                                          <p class="for-price">for person per night</p>
+                                                          <p class="for-price">优质环线等你来订</p>
                                                       </div>
-                                                      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temporui incididunt ut labore et dolore magna papi aliqua ut enim ad.</p>
+                                                      <p class="text">{{item.notice}}</p>
                                                       <div class="group-btn-tours">
-                                                          <a href="hotel-view.html" class="left-btn">book now</a>
+                                                          <router-link  class="left-btn" :to="{path: 'loopInfo', query:{lid: item.loopID}}">
+                                                            查看详情
+                                                          </router-link>
                                                       </div>
                                                   </div>
                                               </div>
@@ -85,6 +87,16 @@
                                       </div>
                                   </div>
                               </div>
+                              <nav class="pagination-list margin-top70">
+                                <paginate
+                                v-model="page"
+                                :pageCount="total"
+                                :clickHandler="clickCallback"
+                                :prevText="'<'"
+                                :nextText="'>'"
+                                :containerClass="'pagination'">
+                                </paginate>
+                              </nav>
                           </div>
                       </div>
                   </div>
@@ -100,11 +112,15 @@
     data() {
       return {
         dateTime: null,
+        loopData: null,
+        total: 0,
+        page: 1
       }
     },
     mounted() {
         this.bannerTop()
         this.date()
+        this.init(0, 6)
     },
     methods: {
       date: function () {
@@ -113,14 +129,14 @@
         }, 1000)
       },
       init: function (skip, limit) {     
-        this.axios.get(this.api.getSelectPath, {
+        this.axios.get(this.api.getSelectLoop, {
             params: { 
               'skip': skip,
               'limit': limit 
             }
         }).then(res => {
             this.total = res.data.total         
-            this.pathData = res.data.data
+            this.loopData = res.data.data
         })
       },
       clickCallback: function (pageNum) {

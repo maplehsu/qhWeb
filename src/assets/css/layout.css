@@ -3859,6 +3859,17 @@ footer .widget .title-widget {
     color: #2b2b2b;
 }
 
+
+.clearfix:before, .clearfix:after, .maooo:before, .maooo:after, .mo-market-list:before, .mo-market-list:after, .mo:before, .mo:after, .article-heading:before, .article-heading:after, .form-group:before, .form-group:after {
+    display: table;
+    content: " "
+}
+    
+.clearfix:after, .maooo:after, .mo-market-list:after, .mo:after, .article-heading:after, .form-group:after {
+    clear: both;
+}
+
+
 /*==============================
  =======  End of FOOTER  =======
 ==============================*/

@@ -10,48 +10,48 @@ jQuery(function($){
 
     SLZ.mainFunction = function() {
         //slide special offer
-        $('.special-offer-list').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            speed: 2000,
-            dots: false,
-            responsive: [
-                {
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        autoplay: true,
-                        autoplaySpeed: 5000,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        autoplay: true,
-                        autoplaySpeed: 5000,
-                        dots: true,
-                        arrows: false
-                    }
-                },
-                {
-                    breakpoint: 481,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 5000,
-                        dots: true,
-                        arrows: false
-                    }
-                }
-            ]
-        });
+        // $('.special-offer-list').slick({
+        //     infinite: true,
+        //     slidesToShow: 4,
+        //     slidesToScroll: 4,
+        //     speed: 2000,
+        //     dots: false,
+        //     responsive: [
+        //         {
+        //             breakpoint: 1025,
+        //             settings: {
+        //                 slidesToShow: 3,
+        //                 slidesToScroll: 3,
+        //                 autoplay: true,
+        //                 autoplaySpeed: 5000,
+        //                 dots: true,
+        //                 arrows: false
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 767,
+        //             settings: {
+        //                 slidesToShow: 2,
+        //                 slidesToScroll: 2,
+        //                 autoplay: true,
+        //                 autoplaySpeed: 5000,
+        //                 dots: true,
+        //                 arrows: false
+        //             }
+        //         },
+        //         {
+        //             breakpoint: 481,
+        //             settings: {
+        //                 slidesToShow: 1,
+        //                 slidesToScroll: 1,
+        //                 autoplay: true,
+        //                 autoplaySpeed: 5000,
+        //                 dots: true,
+        //                 arrows: false
+        //             }
+        //         }
+        //     ]
+        // });
         // ----------------------- WOW-JS --------------------------- //
         new WOW().init();
         // ----------------------- SELECTBOX --------------------------- //

@@ -22,8 +22,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 main-left blog-wrapper">
-                        <div class="blog-post" v-for="(strategy, index) in strategyList">
-                            <div class="blog-image" v-for="(strategyItem, index) in strategy.cover">
+                        <div class="blog-post" v-for="(strategy, index) in strategyList" :key="index">
+                            <div class="blog-image" v-for="(strategyItem, index) in strategy.cover" :key="index">
                                 <a href="javascript:void(0)" class="link">
                                     <img :src="strategyItem.url" alt="a car on a road" class="img-responsive">
                                 </a>
