@@ -10,5 +10,6 @@ export default {
   getBannerList: api + '/getBannerList',
   getRandomPath: api + '/getRandomPath',
   getSelectStrategy: api + '/getSelectStrategy',
-  getRandomStrategy: api + '/getRandomStrategy'
+  getRandomStrategy: api + '/getRandomStrategy',
+  getSelectLoop: api + '/getSelectLoop',
 }
