@@ -45,7 +45,7 @@
                                 </ul>
                             </div>
                             <div class="group-button">
-                                <a href="" class="btn btn-maincolor">查看详情</a>
+                                <a href="/about" class="btn btn-maincolor">查看详情</a>
                             </div>
                         </div>
                     </div>
@@ -71,11 +71,11 @@
                         <div class="tours-list">
                             <div class="tours-layout" v-for="item in pathData" :key="item.pathID">
                                 <div class="image-wrapper">
-                                    <a href="" class="link" v-for="img in item.cover" :key="img.name">
+                                    <router-link class="link" :to="{path: 'pathInfo', query:{pid: item._id}}"   v-for="img in item.cover" :key="img.name">
                                         <img :src="img.url" alt="" class="img-responsive">
-                                    </a>
+                                    </router-link>
                                     <div class="title-wrapper">
-                                        <a href="" class="title">{{item.title}}</a>
+                                        <router-link class="title" :to="{path: 'pathInfo', query:{pid: item._id}}">{{item.title}}</router-link>
                                     </div>
                                 </div>
                                 <div class="content-wrapper">
@@ -89,7 +89,9 @@
                                         </div>
                                         <p class="text">{{item.notice}}</p>
                                         <div class="group-btn-tours">
-                                            <a href="" class="btn btn-gray">线路详情</a>
+                                            <router-link :to="{path: 'pathInfo', query:{pid: item._id}}" >
+                                                <button class="btn btn-gray">线路详情</button>
+                                            </router-link>
                                         </div>
                                     </div>
                                 </div>
@@ -126,106 +128,23 @@
                 <div class="hotels-wrapper">
                     <div class="group-title">
                         <div class="sub-title">
-                            <p class="text">青海最好玩的攻略</p>
+                            <p class="text">青海最好玩的环线</p>
                             <i class="icons flaticon-people"></i>
                         </div>
-                        <h2 class="main-title">旅游攻略</h2>
+                        <h2 class="main-title">环线介绍</h2>
                     </div>
                     <div class="hotels-content margin-top70">
                         <div class="row hotels-list">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6" v-for="item in loopData" :key="item.loopID">
                                 <div class="hotels-layout">
                                     <div class="image-wrapper">
-                                        <a href="" class="link">
-                                            <img src="../assets/images/hotels/hotel-1.jpg" alt="" class="img-responsive">
-                                        </a>
+                                        <router-link  class="link" :to="{path: 'loopInfo', query:{lid: item.loopID}}"  v-for="img in item.cover" :key="img.name">
+                                            <img :src="img.url" class="img-responsive">
+                                        </router-link>
                                         <div class="title-wrapper">
-                                            <a href="" class="title">sarina hotel</a>
-                                            <div title="Rated 5.00 out of 5" class="star-rating">
-                                                <span class="width-80">
-                                                    <strong class="rating">5.00</strong> out of 5</span>
-                                            </div>
-                                        </div>
-                                        <div class="label-sale">
-                                            <p class="text">sale</p>
-                                            <p class="number">35%</p>
-                                        </div>
-                                    </div>
-                                    <div class="content-wrapper">
-                                        <div class="content">
-                                            <div class="title">
-                                                <div class="price">
-                                                    <sup>$</sup>
-                                                    <span class="number">30</span>
-                                                </div>
-                                                <p class="for-price">for person per night</p>
-                                            </div>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus lorem ipsum dolor consectete.</p>
-                                            <div class="group-btn-tours">
-                                                <a href="" class="left-btn">book now</a>
-                                            </div>
-                                        </div>
-                                        <ul class="list-info list-unstyled">
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-eye"></i>
-                                                    <span class="number">234</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-heart"></i>
-                                                    <span class="number">156</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-comment"></i>
-                                                    <span class="number">19</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)" class="link">
-                                                    <i class="icons fa fa-share-alt"></i>
-                                                </a>
-                                                <ul class="share-social-list">
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-google-plus"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons fa fa-map-marker"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="hotels-layout">
-                                    <div class="image-wrapper">
-                                        <a href="" class="link">
-                                            <img src="../assets/images/hotels/hotel-2.jpg" alt="" class="img-responsive">
-                                        </a>
-                                        <div class="title-wrapper">
-                                            <a href="" class="title">sarina hotel</a>
-                                            <div title="Rated 5.00 out of 5" class="star-rating">
-                                                <span class="width-100">
-                                                    <strong class="rating">5.00</strong> out of 5</span>
+                                            <router-link  class="title" :to="{path: 'loopInfo', query:{lid: item.loopID}}">{{item.title}}</router-link>
+                                            <div class="star-rating">
+                                                <span class="width-100"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -233,224 +152,23 @@
                                         <div class="content">
                                             <div class="title">
                                                 <div class="price">
-                                                    <sup>$</sup>
-                                                    <span class="number">30</span>
+                                                    <sup>￥</sup>
+                                                    <span class="number">{{item.price}}</span>
                                                 </div>
-                                                <p class="for-price">for person per night</p>
+                                                <p class="for-price">优质环线等你来订</p>
                                             </div>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus lorem ipsum dolor consectete.</p>
+                                            <p class="text">{{item.notice}}</p>
                                             <div class="group-btn-tours">
-                                                <a href="" class="left-btn">book now</a>
+                                                <router-link  class="left-btn" :to="{path: 'loopInfo', query:{lid: item.loopID}}">
+                                                查看详情
+                                                </router-link>
                                             </div>
                                         </div>
-                                        <ul class="list-info list-unstyled">
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-eye"></i>
-                                                    <span class="number">234</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-heart"></i>
-                                                    <span class="number">156</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-comment"></i>
-                                                    <span class="number">19</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)" class="link">
-                                                    <i class="icons fa fa-share-alt"></i>
-                                                </a>
-                                                <ul class="share-social-list">
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-google-plus"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons fa fa-map-marker"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="hotels-layout">
-                                    <div class="image-wrapper">
-                                        <a href="" class="link">
-                                            <img src="../assets/images/hotels/hotel-3.jpg" alt="" class="img-responsive">
-                                        </a>
-                                        <div class="title-wrapper">
-                                            <a href="" class="title">sarina hotel</a>
-                                            <div title="Rated 5.00 out of 5" class="star-rating">
-                                                <span class="width-90">
-                                                    <strong class="rating">5.00</strong> out of 5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content-wrapper">
-                                        <div class="content">
-                                            <div class="title">
-                                                <div class="price">
-                                                    <sup>$</sup>
-                                                    <span class="number">30</span>
-                                                </div>
-                                                <p class="for-price">for person per night</p>
-                                            </div>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus lorem ipsum dolor consectete.</p>
-                                            <div class="group-btn-tours">
-                                                <a href="" class="left-btn">book now</a>
-                                            </div>
-                                        </div>
-                                        <ul class="list-info list-unstyled">
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-eye"></i>
-                                                    <span class="number">234</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-heart"></i>
-                                                    <span class="number">156</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-comment"></i>
-                                                    <span class="number">19</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)" class="link">
-                                                    <i class="icons fa fa-share-alt"></i>
-                                                </a>
-                                                <ul class="share-social-list">
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-google-plus"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons fa fa-map-marker"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="hotels-layout">
-                                    <div class="image-wrapper">
-                                        <a href="" class="link">
-                                            <img src="../assets/images/hotels/hotel-4.jpg" alt="" class="img-responsive">
-                                        </a>
-                                        <div class="title-wrapper">
-                                            <a href="" class="title">sarina hotel</a>
-                                            <div title="Rated 5.00 out of 5" class="star-rating">
-                                                <span class="width-100">
-                                                    <strong class="rating">5.00</strong> out of 5</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="content-wrapper">
-                                        <div class="content">
-                                            <div class="title">
-                                                <div class="price">
-                                                    <sup>$</sup>
-                                                    <span class="number">30</span>
-                                                </div>
-                                                <p class="for-price">for person per night</p>
-                                            </div>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur elit. Nulla rhoncus lorem ipsum dolor consectete.</p>
-                                            <div class="group-btn-tours">
-                                                <a href="" class="left-btn">book now</a>
-                                            </div>
-                                        </div>
-                                        <ul class="list-info list-unstyled">
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-eye"></i>
-                                                    <span class="number">234</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-heart"></i>
-                                                    <span class="number">156</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons hidden-icon fa fa-comment"></i>
-                                                    <span class="number">19</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)" class="link">
-                                                    <i class="icons fa fa-share-alt"></i>
-                                                </a>
-                                                <ul class="share-social-list">
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-google-plus"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="link-social">
-                                                            <i class="icons fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="link">
-                                                    <i class="icons fa fa-map-marker"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="btn btn-transparent margin-top70">more hotel</a>
+                        <a href="/loop" class="btn btn-transparent margin-top70">更多环线</a>
                     </div>
                 </div>
             </div>
@@ -536,118 +254,25 @@
                             <p class="text">探索青海故事</p>
                             <i class="icons flaticon-people"></i>
                         </div>
-                        <h2 class="main-title">新闻资讯</h2>
+                        <h2 class="main-title">旅游攻略</h2>
                     </div>
                     <div class="news-content margin-top70">
                         <div class="news-list">
-                            <div class="new-layout">
+                            <div class="new-layout" v-for="(strategy, index) in strategyData" :key="index">
                                 <div class="image-wrapper">
-                                    <a href="#" class="link">
-                                        <img src="../assets/images/homepage/new-1.jpg" alt="" class="img-responsive">
+                                    <a class="link"  v-for="(strategyItem, index) in strategy.cover" :key="index">
+                                        <img :src="strategyItem.url"  class="img-responsive">
                                     </a>
-                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</div>
                                 </div>
                                 <div class="content-wrapper">
-                                    <a href="#" class="title">DON’T GIVE IN TO FEAR OR HOW TO TRAVEL TO A PLACE YOU KNOW.</a>
+                                    <a href="#" class="title">{{strategy.title}}</a>
                                     <ul class="info list-inline list-unstyled">
                                         <li>
-                                            <a href="#" class="link">September 17, 2015 </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">admin</a>
+                                            <a href="#" class="link">{{strategy.creatTime, 'YYYY-MM-DD' | moment}}</a>
                                         </li>
                                     </ul>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Ut enim ad minim veniam, quis trud
-                                        tionco laboris nisi ut aliquip.</p>
-                                    <a href="" class="btn btn-maincolor">read know</a>
-                                    <div class="tags">
-                                        <div class="title-tag">tags:</div>
-                                        <ul class="list-inline list-unstyled list-tags">
-                                            <li>
-                                                <a href="" class="tag">explore</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="tag">adventure</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="tag">traveler</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="new-layout">
-                                <div class="image-wrapper">
-                                    <a href="#" class="link">
-                                        <img src="../assets/images/homepage/new-2.jpg" alt="" class="img-responsive">
-                                    </a>
-                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</div>
-                                </div>
-                                <div class="content-wrapper">
-                                    <a href="#" class="title">365 Days: 20 things I Learned from Traveling Around the World</a>
-                                    <ul class="info list-inline list-unstyled">
-                                        <li>
-                                            <a href="#" class="link">november 29, 2015 </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">admin</a>
-                                        </li>
-                                    </ul>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-                                    <a href="" class="btn btn-maincolor">read know</a>
-                                    <div class="tags">
-                                        <div class="title-tag">tags:</div>
-                                        <ul class="list-inline list-unstyled list-tags">
-                                            <li>
-                                                <a href="" class="tag">explore</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="tag">adventure</a>
-                                            </li>
-                                            <li>
-                                                <a href="" class="tag">traveler</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="new-layout">
-                                <div class="image-wrapper">
-                                    <a href="#" class="link">
-                                        <img src="../assets/images/homepage/new-3.jpg" alt="" class="img-responsive">
-                                    </a>
-                                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ...</div>
-                                </div>
-                                <div class="content-wrapper">
-                                    <a href="#" class="title">My 30 Best Travel Tips After 4 Years Traveling The World</a>
-                                    <ul class="info list-inline list-unstyled">
-                                        <li>
-                                            <a href="#" class="link">april 1, 2016</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link">admin</a>
-                                        </li>
-                                    </ul>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                    <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa. Ut enim ad minim veniam, quis trud
-                                        tionco laboris nisi ut aliquip.</p>
-                                    <a href="#" class="btn btn-maincolor">read know</a>
-                                    <div class="tags">
-                                        <div class="title-tag">tags:</div>
-                                        <ul class="list-inline list-unstyled list-tags">
-                                            <li>
-                                                <a href="#" class="tag">explore</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="tag">adventure</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="tag">traveler</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <p class="text">{{strategy.notice}}</p>
+                                    <a :href="'/strategyInfo?id='+strategy.strategyId" class="btn btn-maincolor">查看详情</a>
                                 </div>
                             </div>
                         </div>
@@ -668,7 +293,7 @@
                     <div class="text-left">
                         <div class="sale-box">
                             <div class="sale-box-top">
-                                <h2 class="number">50</h2>
+                                <h2 class="number">10</h2>
                                 <span class="sup-1">%</span>
                                 <span class="sup-2">首单</span>
                             </div>
@@ -677,7 +302,7 @@
                     </div>
                     <div class="text-right">
                         <h5 class="title">用户首次线路预定即享优惠</h5>
-                        <p class="text">超值热门线路优惠中，即日起至2018年10月30日，请多详情咨询客服.</p>
+                        <p class="text">超值热门线路优惠中，即日起至2018年10月30日，每周六推出一款特价游，请多详情咨询客服.</p>
                     </div>
                 </div>
             </div>
@@ -760,9 +385,9 @@
                                     <h5 class="title">联系我们</h5>
                                     <p class="text">只需拿好您的背包，把您的旅游计划交给我们！</p>
                                     <form class="contact-form">
-                                        <input type="text" placeholder="您的名字" class="form-control form-input">
-                                        <input type="phone" placeholder="您的手机号" class="form-control form-input">
-                                        <textarea placeholder="您想跟我们说" class="form-control form-input"></textarea>
+                                        <input type="text" v-model="name" placeholder="您的名字" class="form-control form-input">
+                                        <input type="phone" v-model="phone" placeholder="您的手机号" class="form-control form-input">
+                                        <textarea v-model="message" placeholder="您想跟我们说" class="form-control form-input"></textarea>
                                         <div class="contact-submit">
                                             <button type="submit" data-hover="确认" class="btn btn-slide">
                                                 <span class="text">发给我们</span>
@@ -788,12 +413,19 @@
     },
     data() {
       return {
-        pathData: null
+        pathData: null,
+        loopData: null,
+        strategyData: null,
+        name: '',
+        phone: '',
+        message: ''
       }
     },
     mounted() {
         this.bannerTop()
         this.init()
+        this.loop()
+        this.strategy()
     },
     methods: {
       init: function () {     
@@ -802,6 +434,29 @@
         }).then(res => {
             this.pathData = res.data.data
             this.toursList()
+        })
+      },
+      loop: function () {
+        this.axios.get(this.api.getSelectLoop, {
+            params: { 
+              'skip': 0,
+              'limit': 4 
+            }
+        }).then(res => {
+            this.loopData = res.data.data
+        })
+      },
+      strategy: function () {
+        this.axios.get(this.api.getSelectStrategy, {
+            params: { 
+                'skip': 0,
+                'limit': 3
+            }
+        }).then(res => {   
+            this.strategyData = res.data.data
+            console.log(res.data.data);
+            
+            this.strategyList()
         })
       },
       toursList: function () {
@@ -838,6 +493,32 @@
                     }
                 }]
             })    
+        })
+      },
+      strategyList: function () {
+        this.$nextTick(function () {
+            $('.news-list').slick({
+                infinite: true,
+                dots: true,
+                speed: 700,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                // fade: true,
+                cssEase: 'linear',
+                arrows: false
+
+            })
+        })
+      },
+      add: function () {
+        this.axios.post(this.api.addContact, {
+          name: this.name,
+          phone: this.phone,
+          message: this.message
+        }).then(res => {
+          if(res.status == 200) {
+            alert('添加成功')
+          }
         })
       }
     }

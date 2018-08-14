@@ -88,11 +88,11 @@
                                         <div class="col-sm-4" v-for="item in pathData" :key="item.pathID">
                                           <div class="tours-layout">
                                               <div class="image-wrapper">
-                                                  <a href="" class="link" v-for="img in item.cover" :key="img.name">
+                                                    <router-link class="link" :to="{path: 'pathInfo', query:{pid: item._id}}"   v-for="img in item.cover" :key="img.name">
                                                       <img :src="img.url" alt="" class="img-responsive">
-                                                  </a>
+                                                    </router-link>
                                                   <div class="title-wrapper">
-                                                      <a href="" class="title">{{item.title}}</a>
+                                                      <router-link class="title" :to="{path: 'pathInfo', query:{pid: item._id}}">{{item.title}}</router-link>
                                                   </div>
                                               </div>
                                               <div class="content-wrapper">

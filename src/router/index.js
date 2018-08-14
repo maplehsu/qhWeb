@@ -9,6 +9,8 @@ import PathInfo from '@/view/pathInfo'
 import Loop from '@/view/loop'
 import LoopInfo from '@/view/loopInfo'
 import Info from '@/view/info'
+import Car from '@/view/car'
+import CarInfo from '@/view/carInfo'
 import Contact from '@/view/contact'
 
 Vue.use(Router)
@@ -65,6 +67,16 @@ const router = new Router({
       path: '/contact',
       name: 'contact',
       component: Contact
+    },
+    {
+      path: '/car',
+      name: 'car',
+      component: Car
+    },
+    {
+      path: '/carInfo',
+      name: 'carInfo',
+      component: CarInfo
     }
   ]
 })

@@ -41,7 +41,7 @@
                                 <div class="col-xs-10 content-wrapper">
                                     <a href="javascript:void(0)" class="heading">{{strategy.title}}</a>
                                     <p>{{strategy.notice}}</p>
-                                    <a target="_blank" :href="'/strategyInfo?id='+strategy.strategyId" class="btn btn-gray btn-fit btn-capitalize">Read More</a>
+                                    <a target="_blank" :href="'/strategyInfo?id='+strategy.strategyId" class="btn btn-gray btn-fit btn-capitalize">查看详情</a>
                                 </div>
                             </div>
                         </div>

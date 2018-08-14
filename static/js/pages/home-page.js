@@ -39,20 +39,6 @@ jQuery(function($) {
             }]
         });
 
-        // slide section NEWS AND UPDATES
-        $('.news-list').slick({
-            infinite: true,
-            dots: true,
-            speed: 700,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            // fade: true,
-            cssEase: 'linear',
-            arrows: false
-
-        });
-
-
         ////Responsive for Tab search
         $(window).on('resize load', function(event) {
             //Responsive slider for Tab search default

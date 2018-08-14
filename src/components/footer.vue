@@ -16,11 +16,11 @@
                                           <ul class="list-unstyled">
                                               <li>
                                                   <i class="icons fa fa-map-marker"></i>
-                                                  <a href="#" class="link">132, My Street, Kingston, New York 12401</a>
+                                                  <a href="#" class="link">青海省西宁市南川东路24号。</a>
                                               </li>
                                               <li>
                                                   <i class="icons fa fa-phone"></i>
-                                                  <a href="#" class="link">270 - 188 - 6026</a>
+                                                  <a href="#" class="link">13619788509</a>
                                               </li>
                                           </ul>
                                       </div>
@@ -29,26 +29,23 @@
                           </div>
                           <div class="col-md-2 col-xs-3">
                               <div class="booking-widget widget text-center">
-                                  <div class="title-widget">book now</div>
+                                  <div class="title-widget">旅游服务</div>
                                   <div class="content-widget">
                                       <ul class="list-unstyled">
                                           <li>
-                                              <a href="#" class="link">Flights</a>
+                                              <a href="#" class="link">线路预定</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tours</a>
+                                              <a href="#" class="link">旅游攻略</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Packages</a>
+                                              <a href="#" class="link">环线介绍</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Transfer</a>
+                                              <a href="#" class="link">车辆介绍</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Car Rent</a>
-                                          </li>
-                                          <li>
-                                              <a href="#" class="link">Cruises</a>
+                                              <a href="#" class="link">接送服务</a>
                                           </li>
                                       </ul>
                                   </div>
@@ -56,26 +53,26 @@
                           </div>
                           <div class="col-md-2 col-xs-4">
                               <div class="explore-widget widget">
-                                  <div class="title-widget">explore</div>
+                                  <div class="title-widget">合作伙伴</div>
                                   <div class="content-widget">
                                       <ul class="list-unstyled">
                                           <li>
-                                              <a href="#" class="link">Tour Singapore City</a>
+                                              <a target="_blank" href="http://www.mafengwo.cn/" class="link">马蜂窝</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Manila City</a>
+                                              <a target="_blank" href="http://www.ctrip.com/" class="link">携程旅游网</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour New York City</a>
+                                              <a target="_blank" href="http://www.qyer.com/" class="link">穷游网</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Sanghai City</a>
+                                              <a target="_blank" href="http://www.tuniu.com/" class="link">途牛网</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Hongkong City</a>
+                                              <a target="_blank" href="https://www.booking.com/" class="link">Booking缤客</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Tokyo City</a>
+                                              <a target="_blank" href="https://www.qunar.com/" class="link">去哪网</a>
                                           </li>
                                       </ul>
                                   </div>
@@ -85,26 +82,26 @@
                       <div class="col-2">
                           <div class="col-md-2 col-xs-6">
                               <div class="top-deals-widget widget">
-                                  <div class="title-widget">top deals</div>
+                                  <div class="title-widget">热门旅游景区</div>
                                   <div class="content-widget">
                                       <ul class="list-unstyled">
                                           <li>
-                                              <a href="#" class="link">Tour Packages Singapore</a>
+                                              <a href="#" class="link">茶卡盐湖</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Packages Manila</a>
+                                              <a href="#" class="link">青海湖</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Packages New York</a>
+                                              <a href="#" class="link">塔尔寺</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Packages Sanghai</a>
+                                              <a href="#" class="link">卓尔山</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Packages Hongkong</a>
+                                              <a href="#" class="link">黑马河乡</a>
                                           </li>
                                           <li>
-                                              <a href="#" class="link">Tour Packages Tokyo</a>
+                                              <a href="#" class="link">门源油菜花海</a>
                                           </li>
                                       </ul>
                                   </div>
@@ -112,37 +109,37 @@
                           </div>
                           <div class="col-md-3 col-xs-6">
                               <div class="destination-widget widget">
-                                  <div class="title-widget">Destination</div>
+                                  <div class="title-widget">目的地的</div>
                                   <div class="content-widget">
                                       <ul class="list-unstyled list-inline">
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-01.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-01.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-02.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-02.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-03.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-03.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-04.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-04.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-05.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-05.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                           <li>
                                               <a href="#" class="thumb">
-                                                  <img src="assets/images/footer/gallery-06.jpg" alt="" class="img-responsive" />
+                                                  <img src="../assets/images/footer/gallery-06.jpg" alt="" class="img-responsive" />
                                               </a>
                                           </li>
                                       </ul>

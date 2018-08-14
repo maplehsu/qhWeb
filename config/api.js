@@ -16,4 +16,6 @@ export default {
   getLoop: api + '/getLoop',
   getRandomLoop: api + '/getRandomLoop',
   addContact: api + '/addContact',
+  getCarList: process.env.API_ROOT + '/getCarList',
+  getCar: process.env.API_ROOT + '/getCar',
 }

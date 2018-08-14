@@ -608,6 +608,10 @@ a:hover {
     background-image: url('../images/background/about-us.jpg');
 }
 
+.car-detail {
+    background-image: url('../images/background/bg-car-detail.jpg');
+}
+
 /*=============================
  =====  END GLOBAL STYLE  =====
  =============================*/
