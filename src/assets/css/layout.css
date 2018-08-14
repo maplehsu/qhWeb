@@ -2271,9 +2271,9 @@ a:hover {
     font-size: .93rem;
 }
 
-.find-widget .text-input > .text-box-wrapper:first-child {
+/* .find-widget .text-input > .text-box-wrapper:first-child {
     margin-top: 0;
-}
+} */
 
 .find-widget .input-daterange {
     float: left;

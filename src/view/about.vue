@@ -23,39 +23,37 @@
                 <div class="row">
                     <div class="wrapper-contact-style">
                         <div class="col-lg-6 col-md-8">
-                            <h3 class="title-style-2">Epic journeys</h3>
+                            <h3 class="title-style-2">为什么选择我们</h3>
                             <div class="about-us-wrapper">
-                                <p class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                                    duis aute irure dolor quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.</p>
-                                <p class="text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                                    duis aute irure dolor.</p>
+                                <p class="text">在我们这里可以获取最好玩的旅游资讯，分享旅行。资深的极客，定制好玩又好看的旅游线路。如果你钟情于自驾游，我们提供优质的自驾线路，如果你需要包车业务，我们有风趣专业的司机随时为您待命。</p>
+                                <p class="text">作为中国领先的综合性旅行服务公司，成功整合了高科技产业与传统旅行业，向超过2千万会员提供集无线应用、旅游度假、商旅管理及旅游资讯在内的全方位旅行服务，被誉为互联网和传统旅游无缝结合的典范。</p>
                                 <div class="group-list">
                                     <ul class="list-unstyled about-us-list">
                                         <li>
-                                            <p class="text">First Class Flights</p>
+                                            <p class="text">全天候包车业务</p>
                                         </li>
                                         <li>
-                                            <p class="text">5 Star Accommodations</p>
+                                            <p class="text">提供优质的民宿信息</p>
                                         </li>
                                         <li>
-                                            <p class="text">Inclusive Packages</p>
+                                            <p class="text">接车服务</p>
                                         </li>
                                         <li>
-                                            <p class="text">Latest Model Vehicles</p>
+                                            <p class="text">最新款的车型</p>
                                         </li>
                                     </ul>
                                     <ul class="list-unstyled about-us-list">
                                         <li>
-                                            <p class="text">Handpicked Hotels</p>
+                                            <p class="text">分享特色美食</p>
                                         </li>
                                         <li>
-                                            <p class="text">Accesibility managment</p>
+                                            <p class="text">定期优惠活动</p>
                                         </li>
                                         <li>
-                                            <p class="text">10 Languages available</p>
+                                            <p class="text">幽默专业的导游</p>
                                         </li>
                                         <li>
-                                            <p class="text">+120 Premium city tours</p>
+                                            <p class="text">精挑细选的酒店</p>
                                         </li>
                                     </ul>
                                 </div>
@@ -70,15 +68,15 @@
         </section>
         <section class="videos padding-top padding-bottom page-our-values">
             <div class="container">
-                <h3 class="title-style-2 white">Our Values</h3>
+                <h3 class="title-style-2 white">我们的特色</h3>
                 <div class="row">
                     <div class="our-wrapper">
                         <div class="col-sm-3 col-xs-3">
                             <div class="our-content">
                                 <i class="our-icon flaticon-cruise"></i>
                                 <div class="main-our">
-                                    <p class="our-title">We offer daily tours </p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
+                                    <p class="our-title">一日游</p>
+                                    <p class="text">一日游咨询服务,超值低价览胜多地,一日游高性价比专家服务,青海旅行社品质从这里开始!</p>
                                 </div>
                             </div>
                         </div>
@@ -86,37 +84,17 @@
                             <div class="our-content">
                                 <i class="our-icon flaticon-security-1"></i>
                                 <div class="main-our">
-                                    <p class="our-title">Pygmy Itineraries</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
+                                    <p class="our-title">无悔青春畅游</p>
+                                    <p class="text">哪个城市值得你创造和朋友们的青春旅行记忆？我们为你推荐了可可西里，青海老城区漫步的文艺之旅。</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-3 col-xs-3">
-                            <div class="our-content">
-                                <i class="our-icon flaticon-direction"></i>
-                                <div class="main-our">
-                                    <p class="our-title">Best price guarantee </p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 col-xs-3">
-                            <div class="our-content">
-                                <i class="our-icon flaticon-food-3"></i>
-                                <div class="main-our">
-                                    <p class="our-title">Eco lodges & tours</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="our-wrapper">
                         <div class="col-sm-3 col-xs-3">
                             <div class="our-content">
                                 <i class="our-icon flaticon-transport-10"></i>
                                 <div class="main-our">
-                                    <p class="our-title">Endangered Wildlife</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
+                                    <p class="our-title">个性化定制</p>
+                                    <p class="text">世界这么大 谁说旅行千篇一律？定制属于自己的旅程</p>
                                 </div>
                             </div>
                         </div>
@@ -124,8 +102,28 @@
                             <div class="our-content">
                                 <i class="our-icon flaticon-people-6"></i>
                                 <div class="main-our">
-                                    <p class="our-title">We offer daily tours </p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
+                                    <p class="our-title">自由行攻略</p>
+                                    <p class="text">青海新的防骗攻略,教你如何避开消费陷阱,如何玩的轻松又省钱,旅游攻略青海 明明白白消费,开开心心游玩!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-wrapper">
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="our-content">
+                                <i class="our-icon flaticon-direction"></i>
+                                <div class="main-our">
+                                    <p class="our-title">带宝贝看世界</p>
+                                    <p class="text">带孩子出行可以很甜蜜，也可能很奔波。青海民宿可以满足一家三代住在一起的需求，让你有更多时间进行亲子互动。你还可以根据需求选择带厨房、洗衣机和电视的居家设施，让旅行更加便捷。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-3">
+                            <div class="our-content">
+                                <i class="our-icon flaticon-food-3"></i>
+                                <div class="main-our">
+                                    <p class="our-title">专属浪漫回忆</p>
+                                    <p class="text">在青海湖一起晒出一身古铜色；在夜晚享受一顿难忘的「烛光晚餐」；在自然中一起徒步探险......选择一个高品质的线路，你给爱人的惊喜就成功了一半。青海湖畔一定会给你们带来别样的浪漫。</p>
                                 </div>
                             </div>
                         </div>
@@ -133,8 +131,8 @@
                             <div class="our-content">
                                 <i class="our-icon flaticon-man"></i>
                                 <div class="main-our">
-                                    <p class="our-title">Epic journeys </p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur elit.</p>
+                                    <p class="our-title">包车服务</p>
+                                    <p class="text">正规公司，签订正规包车合同，让您绝无后顾之忧，10年驾龄老司机，这里有最靠谱的包车师傅，安全才能玩的更安心、更开心，包车价格透明，除明码标价之外，绝无其他任何乱收费，油费、过路费、师傅吃住，均已包含在包车费用之中</p>
                                 </div>
                             </div>
                         </div>
@@ -142,8 +140,8 @@
                             <div class="our-content">
                                 <i class="our-icon flaticon-food"></i>
                                 <div class="main-our">
-                                    <p class="our-title">Never lose your deposit</p>
-                                    <p class="text">Lorem ipsum dolor sit amet, consectetur elitea commodo consequat duis aute irure dolor consectetur eli</p>
+                                    <p class="our-title">美食的纯粹</p>
+                                    <p class="text">山海的协奏，眷恋在舌尖，将海鲜、野蔬佐以诚恳初心，因为只有吃到美食的纯粹，人的味觉，才会真正的苏醒，我们都在追寻，食物与灵魂的原味</p>
                                 </div>
                             </div>
                         </div>
@@ -153,37 +151,15 @@
         </section>
         <section class="our-expert padding-top padding-bottom-50">
             <div class="container">
-                <h3 class="title-style-2">our explore expert</h3>
+                <h3 class="title-style-2">我们的团队</h3>
                 <div class="wrapper-expert">
                     <div class="item content-expert">
                         <a href="#" class="img-expert">
                             <img src="../assets/images/homepage/about-5.jpg" alt="" class="img-responsive img">
                         </a>
                         <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#" class="title">肖亚楠</a>
+                            <p class="text">导游经理</p>
                         </div>
                     </div>
                     <div class="item content-expert">
@@ -191,30 +167,8 @@
                             <img src="../assets/images/homepage/about-6.jpg" alt="" class="img-responsive img">
                         </a>
                         <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#" class="title">陈默</a>
+                            <p class="text">线路专家</p>
                         </div>
                     </div>
                     <div class="item content-expert">
@@ -222,30 +176,8 @@
                             <img src="../assets/images/homepage/about-7.jpg" alt="" class="img-responsive img">
                         </a>
                         <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#" class="title">张艺馨</a>
+                            <p class="text">导游经理</p>
                         </div>
                     </div>
                     <div class="item content-expert">
@@ -253,92 +185,8 @@
                             <img src="../assets/images/homepage/about-8.jpg" alt="" class="img-responsive img">
                         </a>
                         <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item content-expert">
-                        <a href="#" class="img-expert">
-                            <img src="../assets/images/homepage/about-7.jpg" alt="" class="img-responsive img">
-                        </a>
-                        <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="item content-expert">
-                        <a href="#" class="img-expert">
-                            <img src="../assets/images/homepage/about-8.jpg" alt="" class="img-responsive img">
-                        </a>
-                        <div class="caption-expert">
-                            <a href="#" class="title">Mark letto</a>
-                            <p class="text">Manager Tour Guide</p>
-                            <ul class="social list-inline">
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-pinterest-p"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="social-expert">
-                                        <i class="expert-icon fa fa-google"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a href="#" class="title">沈欢</a>
+                            <p class="text">客服经理</p>
                         </div>
                     </div>
                 </div>
@@ -356,7 +204,7 @@
                                 </span>
                                 <div class="tours-title">3750</div>
                             </div>
-                            <div class="text">Happy Customers</div>
+                            <div class="text">快乐的客户</div>
                         </div>
                         <div class="content-tours">
                             <i class="icon flaticon-suitcase"></i>
@@ -366,7 +214,7 @@
                                 </span>
                                 <div class="tours-title">7740</div>
                             </div>
-                            <div class="text">Flight To Travel</div>
+                            <div class="text">飞行旅行</div>
                         </div>
                         <div class="content-tours">
                             <i class="icon flaticon-two"></i>
@@ -376,7 +224,7 @@
                                 </span>
                                 <div class="tours-title">850</div>
                             </div>
-                            <div class="text">Hotel to stay</div>
+                            <div class="text">酒店民宿</div>
                         </div>
                         <div class="content-tours">
                             <i class="icon flaticon-transport"></i>
@@ -386,7 +234,7 @@
                                 </span>
                                 <div class="tours-title">140</div>
                             </div>
-                            <div class="text">Car Rental</div>
+                            <div class="text">包车服务</div>
                         </div>
                         <div class="content-tours">
                             <i class="icon flaticon-drink"></i>
@@ -396,126 +244,12 @@
                                 </span>
                                 <div class="tours-title">8960</div>
                             </div>
-                            <div class="text">Awesome Tours</div>
+                            <div class="text">获得赞美</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="wrapper-open-position padding-top padding-bottom">
-            <div class="container">
-                <div class="wrapper-position">
-                    <h3 class="title-style-2">open position</h3>
-                    <div class="content-position">
-                        <div class="row">
-                            <div class="col-md-8 col-sm-12 col-xs-12 main-right">
-                                <div class="content-open">
-                                    <div class="main-position">
-                                        <div class="img-position">
-                                            <a href="#" class="img-open">
-                                                <img src="../assets/images/background/bg-team-open.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="wrapper-text-excel">
-                                        <div class="text-excel"> Business Excellence</div>
-                                        <ul class="list-text list-unstyled">
-                                            <li>
-                                                <a class="link-text">
-                                                    <i class="icon fa fa-angle-double-right"></i>
-                                                    <span class="text-title">What we’re looking for:</span>
-                                                </a>
-                                                <p class="text">You will be working on a wide variety of projects, from branding, advertising, web design, and everything in between. Our style is very collaborative and informal so versatility and communication
-                                                    skills are key. You are a Designer with well-rounded design skills, a desire to learn, and a passion for solving problems of all shapes and sizes with thoughtful design.</p>
-                                            </li>
-                                            <li>
-                                                <a class="link-text">
-                                                    <i class="icon fa fa-angle-double-right"></i>
-                                                    <span class="text-title">What you get to do everyday:</span>
-                                                </a>
-                                                <ul>
-                                                    <li>
-                                                        <span>Create assets for the Zendesk website</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>Concept ideas around the Zendesk brand</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>Design and e xecute Zendesk online advertising</span>
-                                                    </li>
-                                                    <li>
-                                                        <span>Design presentations and printed materials</span>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-12 col-xs-12">
-                                <div class="group-list group-number">
-                                    <ul class="list-unstyled about-us-list">
-                                        <li>
-                                            <span class="text">Accounting, Finance & Legal</span>
-                                            <span class="text-number">3</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Creative</span>
-                                            <span class="text-number">1</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Engineering & Product</span>
-                                            <span class="text-number">4</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Information Technology</span>
-                                            <span class="text-number">6</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Marketing & Sale</span>
-                                            <span class="text-number">2</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Account Management</span>
-                                            <span class="text-number">1</span>
-                                        </li>
-                                        <li>
-                                            <span class="text">Internships</span>
-                                            <span class="text-number">12</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="wrapper-llc">
-                                    <div class="llc-title">expooler SAN FRANCISCO LLC</div>
-                                    <div class="text">Create your travel agency, lodge, club, blog or destination website the quick and easy way.</div>
-                                    <ul class="list-llc list-unstyled">
-                                        <li>
-                                            <i class="icon fa fa-map-marker"></i>
-                                            <a href="#" class="item">132, My Street, Kingston, New York </a>
-                                        </li>
-                                        <li>
-                                            <i class="icon fa fa-phone"></i>
-                                            <a href="#" class="item">
-                                                <p class="ph-number">(+1) 369-258-147</p>
-                                                <p class="ph-number">(+1) 369-268-157</p>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <i class="icon fa fa-envelope-o"></i>
-                                            <a href="#" class="item">recruit@explooer.com</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a href="#" class="view-more">
-                                    <span class="more">View our company page</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 </template>
 <script>

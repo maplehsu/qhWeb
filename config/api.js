@@ -12,6 +12,8 @@ export default {
   getSelectStrategy: api + '/getSelectStrategy',
   getRandomStrategy: api + '/getRandomStrategy',
   getSelectLoop: api + '/getSelectLoop',
+  addLoopReserve: api + '/addLoopReserve',
   getLoop: api + '/getLoop',
   getRandomLoop: api + '/getRandomLoop',
+  addContact: api + '/addContact',
 }

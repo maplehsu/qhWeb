@@ -132,12 +132,6 @@ jQuery(function($){
             }
         });
 
-        $('.btn-book-tour').click(function(event) {
-            /* Act on the event */
-            event.preventDefault();
-            $(this).parent().next('.timeline-book-block').toggleClass('show-book-block');
-        });
-
     };
 
     /*======================================
@@ -146,12 +140,7 @@ jQuery(function($){
     
     $(document).ready(function(){
         SLZ.mainFunction();
-        $('.datepicker').datepicker({
-            format: 'yyyy-mm-dd',
-            todayHighlight : true,
-            language: 'zh-CN',
-            maxViewMode: 0
-        });
+       
     });
     
     /*=====  End of INIT FUNCTIONS  ======*/

@@ -92,34 +92,18 @@
                   </div>
                   <div v-if="!data.adData">
                     <div class="wrapper-btn margin-top70">
-                        <a href="#" class="btn btn-maincolor btn-book-tour">立即预定</a>
+                        <a class="btn btn-maincolor btn-book-tour">立即预定</a>
                     </div>
                     <div class="timeline-book-block book-tour">
                         <div class="find-widget find-hotel-widget widget new-style">
                             <h4 class="title-widgets">立即预定</h4>
                             <form class="content-widget">
                                 <div class="text-input small-margin-top">
-                                    <div class="input-daterange">
-                                        <div class="text-box-wrapper half">
-                                            <label class="tb-label">出发时间</label>
-                                            <div class="input-group">
-                                                <input type="text" placeholder="年-月-日" class="tb-input datepicker">
-                                                <i class="tb-icon fa fa-calendar input-group-addon"></i>
-                                            </div>
-                                        </div>
-                                        <div class="text-box-wrapper half">
-                                            <label class="tb-label">到达时间</label>
-                                            <div class="input-group">
-                                                <input type="text" placeholder="年-月-日" class="tb-input datepicker">
-                                                <i class="tb-icon fa fa-calendar input-group-addon"></i>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="count adult-count text-box-wrapper">
                                         <label class="tb-label">成人</label>
                                         <div class="select-wrapper">
                                             <!--i.fa.fa-chevron-down-->
-                                            <select class="form-control custom-select selectbox">
+                                            <select class="form-control custom-select selectbox" v-model="adult">
                                                 <option selected="selected">1</option>
                                                 <option>2</option>
                                                 <option>3</option>
@@ -136,7 +120,7 @@
                                         <label class="tb-label">儿童</label>
                                         <div class="select-wrapper">
                                             <!--i.fa.fa-chevron-down-->
-                                            <select class="form-control custom-select selectbox">
+                                            <select class="form-control custom-select selectbox" v-model="children">
                                                 <option selected="selected">0</option>
                                                 <option>1</option>
                                                 <option>2</option>
@@ -153,28 +137,44 @@
                                     <div class="first-name text-box-wrapper">
                                         <label class="tb-label">您的名字</label>
                                         <div class="input-group">
-                                            <input type="text" placeholder="必填" class="tb-input">
+                                            <input type="text" placeholder="必填" class="tb-input" v-model="name">
                                         </div>
                                     </div>
                                     <div class="email text-box-wrapper">
                                         <label class="tb-label">您的邮箱</label>
                                         <div class="input-group">
-                                            <input type="email" placeholder="选填" class="tb-input">
+                                            <input type="email" placeholder="选填" class="tb-input" v-model="email">
                                         </div>
                                     </div>
                                     <div class="phone text-box-wrapper">
                                         <label class="tb-label">您的手机号</label>
                                         <div class="input-group">
-                                            <input type="text" placeholder="必填" class="tb-input">
+                                            <input type="text" placeholder="必填" class="tb-input" v-model="phone">
+                                        </div>
+                                    </div>
+                                    <div class="input-daterange">
+                                        <div class="text-box-wrapper half">
+                                            <label class="tb-label">出发时间</label>
+                                            <div class="input-group">
+                                                <input type="text" v-model="startTime" placeholder="年-月-日" class="tb-input datepicker">
+                                                <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                            </div>
+                                        </div>
+                                        <div class="text-box-wrapper half">
+                                            <label class="tb-label">到达时间</label>
+                                            <div class="input-group">
+                                                <input type="text" v-model="endTime" placeholder="年-月-日" class="tb-input datepicker">
+                                                <i class="tb-icon fa fa-calendar input-group-addon"></i>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="note text-box-wrapper">
                                         <label class="tb-label">备注:</label>
                                         <div class="input-group">
-                                            <textarea placeholder="请把您的需要，告诉我们。" rows="3" name="content" class="tb-input"></textarea>
+                                            <textarea placeholder="请把您的需要，告诉我们。" rows="3" name="content" class="tb-input" v-model="message"></textarea>
                                         </div>
                                     </div>
-                                    <button type="submit" data-hover="点击提交" class="btn btn-slide">
+                                    <button type="button" data-hover="点击提交" class="btn btn-slide" @click="addLoopReserve">
                                         <span class="text">立即预定</span>
                                         <span class="icons fa fa-long-arrow-right"></span>
                                     </button>
@@ -295,24 +295,33 @@ export default {
         id: null,
         data: {},
         ad: null,
-        loopData: []
+        loopData: [],
+        startTime: '',
+        endTime: '',
+        adult: '',
+        children: '',
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
     }
   },
   created(){    
-    this.id = this.$route.query.lid
+    this.id = this.$route.query.lid    
   },
   mounted() {
     this.bannerTop()
     this.init()
     this.loop()
+    if(!this.data.adData) {
+        this.plugin()
+    }
   },
   methods: {
     init: function () {
         this.axios.post(this.api.getLoop, {
           loopID: this.id
-        }).then( res => {
-          console.log(res);
-          
+        }).then( res => {                      
           if(res.data[0].adData) {
             this.ad = res.data[0].adData
           }
@@ -322,59 +331,88 @@ export default {
     loop: function () {
       this.axios.get(this.api.getRandomLoop).then(res => {
         this.loopData = res.data
-        this.loopList()     
+        this.loopList()                   
       })
     },
     loopList: function () {
         this.$nextTick(function () {
-          $('.special-offer-list').slick({
-              infinite: true,
-              slidesToShow: 4,
-              slidesToScroll: 4,
-              speed: 2000,
-              dots: false,
-              responsive: [
-                  {
-                      breakpoint: 1025,
-                      settings: {
-                          slidesToShow: 3,
-                          slidesToScroll: 3,
-                          autoplay: true,
-                          autoplaySpeed: 5000,
-                          dots: true,
-                          arrows: false
-                      }
-                  },
-                  {
-                      breakpoint: 767,
-                      settings: {
-                          slidesToShow: 2,
-                          slidesToScroll: 2,
-                          autoplay: true,
-                          autoplaySpeed: 5000,
-                          dots: true,
-                          arrows: false
-                      }
-                  },
-                  {
-                      breakpoint: 481,
-                      settings: {
-                          slidesToShow: 1,
-                          slidesToScroll: 1,
-                          autoplay: true,
-                          autoplaySpeed: 5000,
-                          dots: true,
-                          arrows: false
-                      }
-                  }
-              ]
-          })
+            $('.special-offer-list').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                speed: 2000,
+                dots: false,
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            dots: true,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            dots: true,
+                            arrows: false
+                        }
+                    },
+                    {
+                        breakpoint: 481,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            autoplay: true,
+                            autoplaySpeed: 5000,
+                            dots: true,
+                            arrows: false
+                        }
+                    }
+                ]
+            })
         })
-      }
+    },
+    plugin: function () {
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd',
+            todayHighlight : true,
+            language: 'zh-CN',
+            maxViewMode: 0
+        });
+        $('.btn-book-tour').click(function(event) {
+            event.preventDefault();
+            $(this).parent().next('.timeline-book-block').toggleClass('show-book-block');
+        }); 
+    },
+    addLoopReserve: function () {
+        this.axios.post(this.api.addLoopReserve, {
+            startTime: this.startTime,
+            endTime: this.endTime,
+            adult: this.adult,
+            children: this.children,
+            name: this.name,
+            email: this.email,
+            phone: this.phone,
+            message: this.message
+        }).then(res => {
+            console.log(res);
+            if(res.status == 200) {
+                alert('添加成功')
+            }
+        })
+    }
   }
 }
-
 </script>
+
 <style scoped>
 
 </style>
