@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="body-wrapper">
+        <mobile-nav></mobile-nav>
         <div class="wrapper-content">
             <v-header></v-header>
             <div id="wrapper-content">
@@ -19,11 +20,13 @@
 
 <script>
 import vHeader from '@/components/header'
+import mobileNav from '@/components/mobileNav'
 import vFooter from '@/components/footer'
 export default {
   name: 'App',
   components: {
     vHeader,
+    mobileNav,
     vFooter
   }
 }

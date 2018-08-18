@@ -4017,6 +4017,10 @@
     margin-bottom: 30px;
 }
 
+.item-blog-detail .blog-text .blog-content .blog-descritption img {
+    max-width: 100%;
+}
+
 .item-blog-detail .blog-text .blog-content .blog-descritption .caption {
     margin-bottom: 30px;
 }

@@ -52,9 +52,9 @@
                     <div class="map-info">
                         <h3 class="title-style-2">如何找到我们</h3>
                         <p class="address">
-                            <i class="fa fa-map-marker"></i> 333 Moo 10, Chert Wudthakas Road, Srikan, Don Mueang, Bangkok, Thailand</p>
+                            <i class="fa fa-map-marker"></i>青海省西宁市南川东路24号。</p>
                         <p class="phone">
-                            <i class="fa fa-phone"></i>13619788509</p>
+                            <i class="fa fa-phone"></i>0971-8140983</p>
                         <div class="footer-block">
                         </div>
                     </div>
